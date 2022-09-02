@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/App.css">
+    <title>Document</title>
+</head>
+    <header class="barra">
+        <div class="contenedor">
+            <h1>Pronostica</h1>
+        </div>
+    </header>
+    <div class="grid contenedor contenido-principal">
+        <form class="Formulario Invisible" onSubmit={handleSubmit}>
+            <input type='text' onChange={handreChangeCity} placeholder='Busque su Ciudad' value={Ciudad}></input>
+            <input onChange={handreChangePais} placeholder='Busque su Pais' value={Pais}></input>
+            <button>Buscar</button>
+        </form>
+
+        <aside class="sidebar col-3">
+            <img class="Buscador" src="/src/assets/img/Buscador.png">
+            <h2>Pronostico de Buenos Aires</h2>
+            <div class="ClimaHoy">
+                <img class="IconoDia" src='/src/assets/icons/a02d.png'/>
+                <p class="Grados">28<span>°C</span> </p>
+                <p>Clima Nublado</p>
+            </div>
+        </aside>
+        <main class='caja-contenido col-9'>
+            <h2>Clima Semana Buenos Aires</h2>
+            <div class="ContenedorDiasPro">
+
+                <div class="PronosticoDiv">
+                    <p>Martes</p>
+                    <img src='/src/assets/icons/a04n.png'/>
+                    <p class='Temperatura'>28°C<span class='TempMin'>15°C</span></p>
+                </div>
+                <div class="PronosticoDiv">
+                    <p>Miercoles</p>
+                    <img src='/src/assets/icons/a04n.png'/>
+                    <p class='Temperatura'>28°C<span class='TempMin'>15°C</span></p>
+                </div>
+                <div class="PronosticoDiv">
+                    <p>Jueves</p>
+                    <img src='/src/assets/icons/a04n.png'/>
+                    <p class='Temperatura'>28°C<span class='TempMin'>15°C</span></p>
+                </div>
+                <div class="PronosticoDiv">
+                    <p>Viernes</p>
+                    <img src='/src/assets/icons/a04n.png'/>
+                    <p class='Temperatura'>28°C<span class='TempMin'>15°C</span></p>
+                </div>
+            </div>
+ 
+            <section>
+                <h2>Detalles del Dia</h2>
+                <div class='ContenedorDatos'>
+                    <div class='DivViento'>
+                        <p class="ParrafoDiv">Viento</p>
+                        <p class="ParrafoVal">7<span>mph</span></p>
+                    </div>
+                    <div class='DivViento'>
+                        <p class="ParrafoDiv">Humedad</p>
+                        <p class="ParrafoVal">84<span>%</span></p>
+                    </div>
+                    <div class='DivViento'>
+                        <p class="ParrafoDiv">Visibilidad</p>
+                        <p class="ParrafoVal">6,4 <span> millas</span></p>
+                    </div>
+                    <div class='DivViento'>
+                        <p class="ParrafoDiv">Presion del Aire</p>
+                        <p class="ParrafoVal">998<span>mb</span></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+
+    </script>
+<body>
+    
+</body>
+</html>
